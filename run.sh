@@ -1,6 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-python - <<'PY'
+tmp=$(mktemp)
+trap 'rm -f "$tmp"' EXIT
+
+cat > "$tmp" <<'PY'
 import os,re,sys,time,urllib.request,urllib.error
 from urllib.parse import urljoin,urlparse,urlunparse,unquote
 from concurrent.futures import ThreadPoolExecutor
@@ -332,3 +335,5 @@ if __name__=="__main__":
     try:main()
     except KeyboardInterrupt:clear();sys.exit(0)
 PY
+
+python "$tmp"
