@@ -1,23 +1,40 @@
-# MCPELife Termux
+# 📦 MCPELife Termux
 
-**Minecraft Bedrock download browser for Termux.**
+> 🟩 **Minecraft Bedrock download browser for Termux**
 
-Browse versions and download information from MCPELife directly in your terminal.
+Browse Minecraft Bedrock versions and download information directly from your terminal.
 
-## Install
+---
+
+## 🚀 Install
+
+Installs the required packages and Python library.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/FaiBah/mcpelife-termux/main/setup.sh | bash
 ```
 
-## Launch
+## ▶️ Launch
+
+Starts the MCPELife CLI directly.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/FaiBah/mcpelife-termux/main/run.sh | bash
 ```
 
-## Source
+---
 
-MCPELife — https://mcpelife.com/download/
+## 📁 Files
 
-Unofficial project.
+| File       | Purpose                 |
+| ---------- | ----------------------- |
+| `setup.sh` | ⚙️ Install dependencies |
+| `run.sh`   | 🎮 Run the CLI          |
+
+---
+
+## 🔗 Source
+
+[MCPELife](https://mcpelife.com/download/)
+
+> Unofficial project. Not affiliated with MCPELife or Mojang Studios.
