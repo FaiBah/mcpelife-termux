@@ -336,4 +336,4 @@ if __name__=="__main__":
     except KeyboardInterrupt:clear();sys.exit(0)
 PY
 
-python "$tmp"
+python "$tmp" </dev/tty
